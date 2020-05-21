@@ -1,13 +1,7 @@
 library(shiny)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
 source("img-module.R")
 
 shinyServer(function(input, output, session) {
-  
-  indices <- list.files(path = "www/", pattern = "^dsci0")
-  indices <- unique(gsub("_.+$", "", indices))
   
   results_mods <- reactiveValues()
 
