@@ -1,9 +1,10 @@
 library(shiny)
+library(shinythemes)
 source("img-module.R")
 
-shinyUI(fluidPage(
+shinyUI(fluidPage(theme = shinytheme("united"),
   
-  h1("Welcome!"),
+  h1("Welcome to Dsci Swap!"),
   
   tabsetPanel(type = "pills",
     tabPanel("Play",
